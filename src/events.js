@@ -8,8 +8,8 @@ const stats = [
             "Isha": "10:00 PM",
         }
     },
-    // { id: 2, name: 'Jummah', value: '$119 trillion' },
-    // { id: 3, name: 'Donation Drive', value: '46,000' },
+    { id: 2, name: 'Jummah', value: '$119 trillion' },
+    { id: 3, name: 'Donation Drive', value: '46,000' },
 ]
 
 export default function Events() {
@@ -26,16 +26,7 @@ export default function Events() {
                             </dd>
 
 
-                            <dt className="text-2xl leading-7 text-gray-600">
-                                {
-                                    Object.entries(stats).values.map(([k, value]) => {
-                                        console.log(k);
-                                        <li key={k}>{k} : {value} </li>
-                                    })
-                                }
-                            </dt>
-
-                            {/* <dt className="text-2xl leading-7 text-gray-600">{stat.value}</dt> */}
+                            <dt className="text-2xl leading-7 text-gray-600">{stat.value}</dt>
 
 
                         </div>
